@@ -40,7 +40,7 @@
         }
 
         .footer-text {
-            margin-top: -100px; /* Adjusted margin for closer proximity */
+            margin-top: -90px; /* Adjusted margin for closer proximity */
             font-size: 14px;
             color: #ffffff; /* Text color for the additional text */
             display: flex;
@@ -122,6 +122,7 @@
             overflow: hidden;
             text-align: center;
             vertical-align: middle;
+            white-space: nowrap; /* Prevent text from wrapping */
         }
 
         .fire:before {
@@ -155,6 +156,40 @@
                 background-position: 200% center;
             }
         }
+
+        @media (max-width: 600px) {
+            .mainport-text {
+                font-size: 24px;
+            }
+
+            .footer-text {
+                font-size: 12px;
+                margin-top: 5px;
+            }
+
+            .telegram-link,
+            .snapchat-link {
+                margin: 0 3px;
+                padding: 3px;
+            }
+
+            .animate-character {
+                font-size: 80px;
+            }
+
+            .star-animation {
+                font-size: 18px;
+            }
+
+            .fire {
+                height: 100px;
+            }
+
+            .Blazing {
+                font-size: 50px;
+                line-height: 30px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -167,7 +202,7 @@
     </div>
     <div class="footer-text">
         <a class="telegram-link" href="your_telegram_link">Telegram</a> <span class="star-animation">✯</span>
-        <a class="snapchat-link" href="your_snapchat_link">Snapchat</a>
+        <a class="snapchat-link" href="your_snapchat_link">Snapchat</a>.
     </div>
 </body>
 </html>
